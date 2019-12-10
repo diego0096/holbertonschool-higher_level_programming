@@ -6,7 +6,7 @@
  */
 int check_cycle(listint_t *list)
 {
-	listint_t *temp, *new;
+	listint_t *pto1, *pto2;
 
 	pto1 = list;
 	pto2 = list;

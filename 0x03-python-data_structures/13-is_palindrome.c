@@ -28,5 +28,5 @@ int is_palindrome(listint_t **head)
 {
 	if (*head == NULL || (*head)->next == NULL)
 
-	return(is_pal(head, *head));
+	return (is_pal(head, *head));
 }

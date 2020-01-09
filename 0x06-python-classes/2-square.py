@@ -7,7 +7,7 @@ class Square():
     def __init__(self, size=0):
         '''Initialization of the square with size'''
 
-            '''size: Zero or positve number.'''
+        '''size: Zero or positve number.'''
         if not isinstance(size, int):
             raise TypeError("size is an integer")
         if size < 0:

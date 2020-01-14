@@ -5,6 +5,7 @@
     div (division factor)
 '''
 
+
 def matrix_divided(matrix, div):
     '''
         divides a matrix value by a divisor

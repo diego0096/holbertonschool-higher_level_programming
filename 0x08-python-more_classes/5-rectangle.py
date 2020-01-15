@@ -42,7 +42,7 @@ class Rectangle:
         '''returns the rectangle perimeter'''
         return 2 * (self.__width + self.__height)
 
-    ddef __str__(self):
+    def __str__(self):
         '''returning the string representation of the rectangle'''
         rectangle = ""
         if self.height == 0 or self.width == 0:

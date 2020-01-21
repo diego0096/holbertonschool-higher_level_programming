@@ -42,4 +42,4 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_one(self):
         '''Testing with all the list values equal to each other'''
-        self.assertEqual(max_integer([1]), 1)
+        self.assertEqual(max_integer([1]), 1)cd test_begining

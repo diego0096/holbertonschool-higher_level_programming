@@ -15,4 +15,4 @@ class Student:
         for items in attrs:
             if hasattr(self, items):
                 my_dict[items] = getattr(self, items)
-        return self.__dict__
+        return my_dict

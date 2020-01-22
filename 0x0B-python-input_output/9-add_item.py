@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Function that add arguments to a Python list"""
+"""
+Python function that add arguments to a Python list
+"""
 import sys
 import os
 

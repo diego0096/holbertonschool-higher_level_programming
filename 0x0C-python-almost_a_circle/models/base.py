@@ -61,7 +61,7 @@ class Base:
         try:
             with open("{}.json".format(cls.__name__), 'r') as f:
                 new = cls.from_json_string(f.read())
-            except IOError:
+        except IOError:
             return []
 
         for i in new:

@@ -3,7 +3,6 @@
 
 import json
 
-
 class Base:
     '''Base Class with private attributes'''
 
@@ -52,7 +51,6 @@ class Base:
             dummy = cls(1)
         dummy.update(**dictionary)
         return dummy
-
     @classmethod
     def load_from_file(cls):
         '''Class Method that returns a list of instances'''

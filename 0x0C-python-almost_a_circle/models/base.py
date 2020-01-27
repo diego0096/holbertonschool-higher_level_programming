@@ -64,6 +64,6 @@ class Base:
         except IOError:
             return []
 
-        for i in new:
+            for i in new:
             new_list.append(cls.create(**i))
         return new_list

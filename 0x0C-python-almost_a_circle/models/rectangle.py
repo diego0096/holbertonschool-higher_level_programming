@@ -61,7 +61,7 @@ class Rectangle(Base):
         b, c = self.x, self.y
         return("[Rectangle] ({}) {}/{} - {}/{}".format(a, b, c, d, e))
 
-        @property
+    @property
     def width(self):
         """set the property of width"""
         return self.__width

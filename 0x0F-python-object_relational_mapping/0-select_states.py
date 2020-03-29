@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Lists all values in the states tables of a database
+Lists all states from the database
 """
 import sys
 import MySQLdb
@@ -10,7 +10,7 @@ if __name__ == '__main__':
                          db=sys.argv[3], port=3306)
 
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name = %s;", (sys.argv[4],))
+    cur.execute("SELECT * FROM states;")
     states = cur.fetchall()
 
     for state in states:

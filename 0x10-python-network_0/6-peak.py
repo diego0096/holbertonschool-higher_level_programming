@@ -11,6 +11,6 @@ def find_peak(list_of_integers):
     if (k == l - 1 or pivot >= list_of_integers[k + 1]) and\
             (k == 0 or pivot >= left):
         return pivot
-    elif k != l - 1 and list_of_integers[m + 1] > pivot:
+    elif k != l - 1 and list_of_integers[k + 1] > pivot:
         return (find_peak(list_of_integers[k + 1:]))
     return (find_peak(list_of_integers[:k]))

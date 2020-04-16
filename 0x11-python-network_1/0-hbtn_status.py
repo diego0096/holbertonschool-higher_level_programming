@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-# Python script that fetches a url
+# Script that fetches an url
 import urllib.request as ur
 
-with ur.urlopen('https://intranet.hbtn.io/status') as res:
-    res = res.read()
+with ur.urlopen('https://intranet.hbtn.io/status') as r:
+    r = r.read()
 
-print('Body response:\n\t- type: {}\n\t- content: {}'.format(type(res), res))
-print('\t- utf8 content: {}'.format(str(res, 'utf-8')))
+print('Body response:\n\t- type: {}\n\t- content: {}'.format(type(r), r))
+print('\t- utf8 content: {}'.format(str(r, 'utf-8')))

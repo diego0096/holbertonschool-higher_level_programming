@@ -1,14 +1,19 @@
 #!/usr/bin/node
-// JS to find the second largest number
-'use strict';
-(function secondBiggest (arg) {
-  const list = [];
-  if (process.argv.length < 4) {
-    console.log(0);
-  } else {
-    for (let count = 2; count < process.argv.length; count++) {
-      list.push(Number(process.argv[count]));
+// js to find the second largest number
+function second (myArray) {
+  if (myArray.length === 2 || myArray.length === 3) { return (0); }
+
+  let max = myArray[2];
+  let secondMax = myArray[3];
+
+  for (let i = 2; i < myArray.length; i++) {
+    if (myArray[i] > max) {
+      secondMax = max;
+      max = myArray[i];
+    } else if (myArray[i] > secondMax && myArray[i] < max) {
+      secondMax = myArray[i];
     }
-    console.log(list.sort()[list.length - 2]);
   }
-})();
+  return (secondMax);
+}
+console.log(second(process.argv));

@@ -16,4 +16,5 @@ function second (myArray) {
   }
   return (secondMax);
 }
+
 console.log(second(process.argv));

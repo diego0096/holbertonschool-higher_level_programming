@@ -1,6 +1,6 @@
 #!/usr/bin/node
-cont request = require('request');
-request(procees.argv[2], function (eror, response) {
+const request = require('request');
+request(process.argv[2], function (error, response) {
     if (error == null) {
         console.log('code: ' + response.statusCode);
     }
